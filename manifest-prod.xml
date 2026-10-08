@@ -7,11 +7,11 @@
   xsi:type="TaskPaneApp">
 
   <Id>b6f0a1a2-4c1e-4a7a-9f0a-3d9e0c1e2f10</Id>
-  <Version>1.0.0.0</Version>
+  <Version>1.1.0.0</Version>
   <ProviderName>Can Chinh Van Ban</ProviderName>
   <DefaultLocale>vi-VN</DefaultLocale>
   <DisplayName DefaultValue="Căn chỉnh văn bản" />
-  <Description DefaultValue="Chuẩn hoá page setup, chèn quốc hiệu tiêu ngữ, nơi nhận, chữ ký, lặp tiêu đề bảng, căn giữa bảng, justify nội dung." />
+  <Description DefaultValue="Chuẩn hoá văn bản hành chính theo NĐ 30/2020: lề trang, font, trang ngang/dọc, quốc hiệu tiêu ngữ, nơi nhận chữ ký, bảng biểu, đoạn văn, đổi số thành chữ." />
   <IconUrl DefaultValue="https://vinhxphus.github.io/can-chinh-van-ban/assets/icon-32.png" />
   <HighResolutionIconUrl DefaultValue="https://vinhxphus.github.io/can-chinh-van-ban/assets/icon-80.png" />
   <SupportUrl DefaultValue="https://vinhxphus.github.io/can-chinh-van-ban" />
@@ -39,16 +39,12 @@
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
     <Hosts>
       <Host xsi:type="Document">
-        <Runtimes>
-          <Runtime resid="Taskpane.Url" lifetime="long" />
-        </Runtimes>
         <DesktopFormFactor>
           <GetStarted>
             <Title resid="GetStarted.Title" />
             <Description resid="GetStarted.Description" />
             <LearnMoreUrl resid="GetStarted.LearnMoreUrl" />
           </GetStarted>
-          <FunctionFile resid="Taskpane.Url" />
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
             <OfficeTab id="TabHome">
               <Group id="CanChinhVanBan.Group">
@@ -98,7 +94,7 @@
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="GetStarted.Description" DefaultValue="Mở panel để chuẩn hoá định dạng văn bản hành chính." />
-        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Mở panel căn chỉnh văn bản (page setup, quốc hiệu, nơi nhận, chữ ký, bảng, justify)" />
+        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Mở panel căn chỉnh văn bản hành chính (lề trang, font, quốc hiệu, nơi nhận, bảng, đoạn văn, đổi số)" />
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>
